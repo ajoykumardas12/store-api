@@ -1,0 +1,131 @@
+[
+  {
+    "name": "accent chair",
+    "price": 25,
+    "company": "hooli",
+    "rating": 4
+  },
+  {
+    "name": "albany sectional",
+    "price": 109,
+    "company": "globex",
+    "rating": 5
+  },
+  {
+    "name": "albany table",
+    "price": 309,
+    "company": "globex",
+    "rating": 4.9
+  },
+  {
+    "name": "armchair",
+    "price": 125,
+    "company": "hooli",
+    "rating": 4.8
+  },
+  {
+    "name": "bar stool",
+    "price": 40,
+    "company": "globex",
+    "rating": 4.6
+  },
+  {
+    "name": "dining table",
+    "price": 42,
+    "company": "acme",
+    "rating": 4.55
+  },
+  {
+    "name": "emperor bed",
+    "price": 23,
+    "company": "acme"
+  },
+  {
+    "name": "entertainment center",
+    "price": 59,
+    "featured": true,
+    "company": "initech"
+  },
+  {
+    "name": "high-back bench",
+    "price": 39,
+    "featured": true,
+    "company": "acme"
+  },
+
+  {
+    "name": "leather sofa",
+    "price": 99,
+    "company": "initech"
+  },
+  {
+    "name": "modern bookshelf",
+    "price": 31,
+    "featured": true,
+    "company": "initech"
+  },
+  {
+    "name": "modern poster",
+    "price": 30,
+    "company": "globex"
+  },
+  {
+    "name": "shelf",
+    "price": 30,
+    "company": "acme"
+  },
+  {
+    "name": "simple chair",
+    "price": 109,
+    "company": "globex"
+  },
+  {
+    "name": "sofa set",
+    "price": 129,
+    "company": "hooli"
+  },
+  {
+    "name": "suede armchair",
+    "price": 15,
+    "company": "initech"
+  },
+  {
+    "name": "utopia sofa",
+    "price": 79,
+    "featured": true,
+    "company": "globex"
+  },
+  {
+    "name": "vase table",
+    "price": 120,
+    "featured": true,
+    "company": "hooli"
+  },
+  {
+    "name": "wooden bed",
+    "price": 25,
+    "company": "acme"
+  },
+  {
+    "name": "wooden desk",
+    "price": 15,
+    "company": "acme"
+  },
+  {
+    "name": "wooden desk",
+    "price": 40,
+    "company": "acme"
+  },
+  {
+    "name": "wooden table",
+    "price": 23,
+    "featured": true,
+    "company": "initech"
+  },
+  {
+    "name": "a first wooden table",
+    "price": 23,
+    "featured": true,
+    "company": "initech"
+  }
+]
