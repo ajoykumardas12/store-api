@@ -2,7 +2,7 @@ import asyncHandler from "express-async-handler";
 import Product from "../models/productsModel.js";
 
 const getAllProducts = asyncHandler(async (req, res) => {
-  const { featured, company, name, sort, fields } = req.query;
+  const { featured, company, name, sort, fields, numericFilters } = req.query;
   const queryObj = {};
 
   if (featured) {
@@ -13,6 +13,28 @@ const getAllProducts = asyncHandler(async (req, res) => {
   }
   if (name) {
     queryObj.name = { $regex: name, $options: "i" };
+  }
+
+  if (numericFilters) {
+    const operatorMap = {
+      ">": "$gt",
+      ">=": "$gte",
+      "=": "$eq",
+      "<": "$lt",
+      "<=": "$lte",
+    };
+    const regEx = /\b(<|>|>=|=|<|<=)\b/g;
+    let filters = numericFilters.replace(
+      regEx,
+      (match) => `-${operatorMap[match]}-`
+    );
+    const options = ["price", "rating"];
+    filters = filters.split(",").forEach((item) => {
+      const [field, operator, value] = item.split("-");
+      if (options.includes(field)) {
+        queryObj[field] = { [operator]: Number(value) };
+      }
+    });
   }
 
   let result = Product.find(queryObj);
